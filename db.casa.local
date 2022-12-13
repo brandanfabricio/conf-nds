@@ -1,0 +1,4 @@
+casa.local.        IN  SOA ns1.casa.local. ns2.casa.local. 202209000 7200 3600 1209600 3600
+server1.casa.local.    IN  A       192.168.1.23
+cam2.casa.local.       IN  A       192.168.1.23
+www.casa.local.        IN  CNAME   server1

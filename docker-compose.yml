@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  coredns:
+    image: coredns/coredns
+    container_name: coredns
+    restart: on-failure # podemos usar always si queremos que sea persistente a través de reinicios del host
+    expose:
+      - '53'
+      - '53/udp'
+    ports:
+      - '53:53'
+      - '53:53/udp'
+    volumes:
+      - './config:/etc/coredns'
+    command: -conf /etc/coredns/corefile
