@@ -5,7 +5,7 @@
 }
 
 casa.local:53 {
-    file /etc/coredns/db.casa.local
+    file /root/apk/coredns/conf-nd/db.casa.local
     log
     errors
 }
